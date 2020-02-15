@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon App">
+
+	<test name="Amazon Android App">
+		<classes>
+			<class name="tests.Home" />
+			<class name="tests.SearchProduct" />
+			<class name="tests.SelectProduct" />
+			<class name="tests.AddToCart" />
+			<class name="tests.ShippingDetails" />
+			<class name="tests.PaymentDetails" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="15" total="21" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[Driver Initialized.....]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for signin page to load]]>
+    </line>
+    <line>
+      <![CDATA[Signin page to loaded]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 1_SigninPage]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Continue button]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for language selection popup to appear]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on English radio button]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 2_SelectLanguage]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on save changes button]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 3_SaveChanges]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on search input]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 4_SearchInput]]>
+    </line>
+    <line>
+      <![CDATA[Entered product name]]>
+    </line>
+    <line>
+      <![CDATA[List of Available products]]>
+    </line>
+    <line>
+      <![CDATA[OnePlus 138.8 cm (55 inches) Q1 Series 4K Certified Android QLED TV 55Q1IN-1 (Black) (Without Stand)]]>
+    </line>
+    <line>
+      <![CDATA[OnePlus 138.8 cm (55 inches) Q1 Series 4K Certified Android QLED TV 55Q1IN-1 (Black) (Without Stand)]]>
+    </line>
+    <line>
+      <![CDATA[TCL 163.96 cm (65 inches)  AI 4K UHD Certified Android Smart LED TV 65P8 (Black) (2019 Model)]]>
+    </line>
+    <line>
+      <![CDATA[Search results displayed]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 5_ProductList]]>
+    </line>
+    <line>
+      <![CDATA[Retrieved product name at second location]]>
+    </line>
+    <line>
+      <![CDATA[Product is selected on search results page]]>
+    </line>
+    <line>
+      <![CDATA[Scrolling down  Add to Cart Button...]]>
+    </line>
+    <line>
+      <![CDATA[Scroll Complete...]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 6_Add to cart]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Add to Cart Button...]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 7_Cart]]>
+    </line>
+    <line>
+      <![CDATA[Cart popup displayed]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 7_Cart]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Cart Button...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Proceed to checkout button]]>
+    </line>
+    <line>
+      <![CDATA[Proceed to checkout button visible]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 8_Proceed To Checkout]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Proceed to checkout Button...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for Deliver to this address button]]>
+    </line>
+    <line>
+      <![CDATA[Deliver to this address button visible]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 8_ShippingAddress]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on deliver to this address button...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for continue button to be displayed]]>
+    </line>
+    <line>
+      <![CDATA[continue button is Visible]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of ContinueButton]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Continue Button]]>
+    </line>
+    <line>
+      <![CDATA[NetBanking option is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Continue button is clicked]]>
+    </line>
+  </reporter-output>
+  <suite name="Amazon App" duration-ms="110972" started-at="2020-02-15T02:39:01Z" finished-at="2020-02-15T02:40:52Z">
+    <groups>
+    </groups>
+    <test name="Amazon Android App" duration-ms="110972" started-at="2020-02-15T02:39:01Z" finished-at="2020-02-15T02:40:52Z">
+      <class name="tests.PaymentDetails">
+        <test-method status="PASS" signature="selectPaymentDetails()[pri:0, instance:tests.PaymentDetails@528931cf]" name="selectPaymentDetails" duration-ms="31147" started-at="2020-02-15T02:40:21Z" finished-at="2020-02-15T02:40:52Z">
+          <reporter-output>
+            <line>
+              <![CDATA[NetBanking option is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Continue button is clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectPaymentDetails -->
+      </class> <!-- tests.PaymentDetails -->
+      <class name="tests.AddToCart">
+        <test-method status="PASS" signature="AddItemToCart()[pri:0, instance:tests.AddToCart@7a1ebcd8]" name="AddItemToCart" duration-ms="34186" started-at="2020-02-15T02:39:36Z" finished-at="2020-02-15T02:40:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Scrolling down  Add to Cart Button...]]>
+            </line>
+            <line>
+              <![CDATA[Scroll Complete...]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 6_Add to cart]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Add to Cart Button...]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 7_Cart]]>
+            </line>
+            <line>
+              <![CDATA[Cart popup displayed]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 7_Cart]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Cart Button...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for Proceed to checkout button]]>
+            </line>
+            <line>
+              <![CDATA[Proceed to checkout button visible]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 8_Proceed To Checkout]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Proceed to checkout Button...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddItemToCart -->
+      </class> <!-- tests.AddToCart -->
+      <class name="tests.ShippingDetails">
+        <test-method status="PASS" signature="selectOrEnterShippingDetails()[pri:0, instance:tests.ShippingDetails@5faeada1]" name="selectOrEnterShippingDetails" duration-ms="10235" started-at="2020-02-15T02:40:11Z" finished-at="2020-02-15T02:40:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Waiting for Deliver to this address button]]>
+            </line>
+            <line>
+              <![CDATA[Deliver to this address button visible]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 8_ShippingAddress]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on deliver to this address button...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for continue button to be displayed]]>
+            </line>
+            <line>
+              <![CDATA[continue button is Visible]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of ContinueButton]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Continue Button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectOrEnterShippingDetails -->
+      </class> <!-- tests.ShippingDetails -->
+      <class name="tests.SearchProduct">
+        <test-method status="PASS" signature="searchForAProduct()[pri:0, instance:tests.SearchProduct@11438d26]" name="searchForAProduct" duration-ms="11702" started-at="2020-02-15T02:39:18Z" finished-at="2020-02-15T02:39:30Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on search input]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 4_SearchInput]]>
+            </line>
+            <line>
+              <![CDATA[Entered product name]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchForAProduct -->
+      </class> <!-- tests.SearchProduct -->
+      <class name="tests.Home">
+        <test-method status="PASS" signature="ReadProperties()[pri:0, instance:tests.Home@458c1321]" name="ReadProperties" is-config="true" duration-ms="16" started-at="2020-02-15T02:38:51Z" finished-at="2020-02-15T02:38:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadProperties -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Home@458c1321]" name="setup" is-config="true" duration-ms="9862" started-at="2020-02-15T02:38:51Z" finished-at="2020-02-15T02:39:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Driver Initialized.....]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginAndSelectLanguage()[pri:0, instance:tests.Home@458c1321]" name="loginAndSelectLanguage" duration-ms="16911" started-at="2020-02-15T02:39:01Z" finished-at="2020-02-15T02:39:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Waiting for signin page to load]]>
+            </line>
+            <line>
+              <![CDATA[Signin page to loaded]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 1_SigninPage]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Continue button]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for language selection popup to appear]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on English radio button]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 2_SelectLanguage]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on save changes button]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 3_SaveChanges]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginAndSelectLanguage -->
+        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:tests.Home@458c1321]" name="TeardownTest" is-config="true" duration-ms="2" started-at="2020-02-15T02:40:52Z" finished-at="2020-02-15T02:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TeardownTest -->
+      </class> <!-- tests.Home -->
+      <class name="tests.SelectProduct">
+        <test-method status="PASS" signature="selectAProduct()[pri:0, instance:tests.SelectProduct@34cd072c]" name="selectAProduct" duration-ms="6721" started-at="2020-02-15T02:39:30Z" finished-at="2020-02-15T02:39:36Z">
+          <reporter-output>
+            <line>
+              <![CDATA[List of Available products]]>
+            </line>
+            <line>
+              <![CDATA[OnePlus 138.8 cm (55 inches) Q1 Series 4K Certified Android QLED TV 55Q1IN-1 (Black) (Without Stand)]]>
+            </line>
+            <line>
+              <![CDATA[OnePlus 138.8 cm (55 inches) Q1 Series 4K Certified Android QLED TV 55Q1IN-1 (Black) (Without Stand)]]>
+            </line>
+            <line>
+              <![CDATA[TCL 163.96 cm (65 inches)  AI 4K UHD Certified Android Smart LED TV 65P8 (Black) (2019 Model)]]>
+            </line>
+            <line>
+              <![CDATA[Search results displayed]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 5_ProductList]]>
+            </line>
+            <line>
+              <![CDATA[Retrieved product name at second location]]>
+            </line>
+            <line>
+              <![CDATA[Product is selected on search results page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectAProduct -->
+      </class> <!-- tests.SelectProduct -->
+    </test> <!-- Amazon Android App -->
+  </suite> <!-- Amazon App -->
+</testng-results>

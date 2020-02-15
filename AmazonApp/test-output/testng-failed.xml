@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon App]">
+  <test thread-count="5" name="Amazon Android App(failed)">
+    <classes>
+      <class name="tests.PaymentDetails">
+        <methods>
+          <include name="ReadProperties"/>
+          <include name="setup"/>
+          <include name="TeardownTest"/>
+          <include name="selectPaymentDetails"/>
+        </methods>
+      </class> <!-- tests.PaymentDetails -->
+    </classes>
+  </test> <!-- Amazon Android App(failed) -->
+</suite> <!-- Failed suite [Amazon App] -->
