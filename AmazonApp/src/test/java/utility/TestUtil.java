@@ -19,6 +19,9 @@ import io.appium.java_client.touch.offset.PointOption;
 
 public class TestUtil extends TestBase {
 
+	/**
+	 * Vertical scroll logic
+	 */
 	public static void scrollDown() {
 		Dimension dimensions = driver.manage().window().getSize();
 		Double screenHeightStart = dimensions.getHeight() * 0.5;
@@ -31,20 +34,29 @@ public class TestUtil extends TestBase {
 				.release().perform();
 	}
 
-	// This method only logs message in report and custom logs
+	/**
+	 * This method only logs message in report and custom logs
+	 */
 	public static void logMessage(String msg) {
 		Reporter.log(msg);
 		log.info(msg);
+		System.out.println(msg);
 	}
 
-	// This method only logs message in report and custom logs. Also captures
-	// screenshots
+	/**
+	 * This method only logs message in report and custom logs. Also captures
+	 * screenshots
+	 */
 	public static void logMessageWithScreenShot(String msg, String SSname) {
 		Reporter.log(msg);
 		log.info(msg);
+		System.out.println(msg);
 		takeScreenshot(SSname);
 	}
 
+	/**
+	 * Screenshot code
+	 */
 	public static void takeScreenshot(String filename) {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
