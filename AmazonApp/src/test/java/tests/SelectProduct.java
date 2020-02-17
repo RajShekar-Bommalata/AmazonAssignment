@@ -8,8 +8,8 @@ import utility.TestBase;
 public class SelectProduct extends TestBase {
 
 	static String productNameInSearchPage;
+
 	@Test
-	
 	public void selectAProduct() throws Exception {
 		PLP plp = new PLP(driver);
 		productNameInSearchPage = plp.getItemName();
