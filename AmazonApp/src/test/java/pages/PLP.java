@@ -21,37 +21,42 @@ public class PLP extends TestUtil {
 	
 	@FindBy(xpath = "//*[@resource-id='com.amazon.mShop.android.shopping:id/rs_corrections_mixed_quartz']")
 	private WebElement searchResults;
-	public static String productNameInSearchPage ="";
 
 	public PLP(AndroidDriver<AndroidElement> driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * This method fetches the desired product name and returns productNameInSearchPage
+	 */
 	public String getItemName() throws InterruptedException {
 		waitForElement(driver, searchResults);
-		String product = "";
+		String productNameInSearchPage = "";
 		try {
 			logMessage("List of Available products");
 			for (WebElement list : productList) {
 				logMessage(list.getText());
 			}
 			logMessageWithScreenShot("Search results displayed","5_ProductList");
-			product = productList.get(1).getText();
+			productNameInSearchPage = productList.get(2).getText();
 			logMessage("Retrieved product name at second location");
 		} catch (Exception e) {
 			Assert.fail("Failed to get item name from search results page");
 			logMessageWithScreenShot("Failed to get item name from search results page","Err_getItemName");
 		}
-		return product;
+		return productNameInSearchPage;
 	}
 
+	/**
+	 * This method selects product from productListingPage
+	 */
 	public void selectAProduct() {
 		try {
 			waitForElement(driver, productList.get(2));
-			productNameInSearchPage = productList.get(2).getText();
+			//productNameInSearchPage = productList.get(2).getText();
 			productList.get(2).click();
-			logMessage(productNameInSearchPage +"  Product is selected on search results page");
+			logMessage(productList.get(2).getText() +"  Product is selected on search results page");
 		}
 		catch (Exception e) {
 			Assert.fail("Failed to select product");
