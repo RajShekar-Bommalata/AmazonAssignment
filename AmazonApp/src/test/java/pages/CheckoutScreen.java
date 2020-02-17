@@ -24,17 +24,17 @@ public class CheckoutScreen extends TestUtil {
 	 */
 
 	public String getItemNameOnCheckOut() {
+		waitForElement(driver, actualItemName);
 		for (int scrollCount = 0; scrollCount < 5; scrollCount++) {
 			scrollDown();
 		}
 		String productNameInCheckout = "";
-		waitForElement(driver, actualItemName);
 		try {
 			productNameInCheckout = actualItemName.getText();
-			logMessageWithScreenShot("Product name captured in checkout..", "13_checkout");
+			logMessageWithScreenShot("Product name captured in checkout..", "14_checkout");
 		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_getItemNameOnCheckOut");
 			Assert.fail("Failed to get item name from check out page");
-			logMessageWithScreenShot("Failed to get item name from check out page..", "Err_getItemNameOnCheckOut");
 		}
 		return productNameInCheckout;
 	}
@@ -46,6 +46,7 @@ public class CheckoutScreen extends TestUtil {
 		try {
 			Assert.assertEquals(actualProduct, expectedProduct, "Products Verified");
 		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_compareItemNames");
 			Assert.fail("Failed to compare both values");
 		}
 	}

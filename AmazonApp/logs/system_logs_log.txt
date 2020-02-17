@@ -1,47 +1,56 @@
-14 Feb 2020 18:38:51,0564 nativeApplicationLogger INFO [TestBase] Properties loaded successfully. 
-14 Feb 2020 18:38:51,0564 nativeApplicationLogger INFO [TestBase] Properties loaded successfully. 
-14 Feb 2020 18:38:51,0673 nativeApplicationLogger INFO [TestBase] Setting Capabilities : Capabilities {appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., deviceName: 8fdb56df, noReset: false, platformName: Android, platformVersion: 9} 
-14 Feb 2020 18:39:01,0366 nativeApplicationLogger INFO [TestBase] Driver instance created 
-14 Feb 2020 18:39:01,0425 nativeApplicationLogger INFO [TestBase] Driver Initialized 
-14 Feb 2020 18:39:01,0560 nativeApplicationLogger INFO [TestUtil] Waiting for signin page to load 
-14 Feb 2020 18:39:02,0877 nativeApplicationLogger INFO [TestUtil] Signin page to loaded 
-14 Feb 2020 18:39:05,0314 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 1_SigninPage 
-14 Feb 2020 18:39:05,0775 nativeApplicationLogger INFO [TestUtil] Clicked on Continue button 
-14 Feb 2020 18:39:05,0776 nativeApplicationLogger INFO [TestUtil] Waiting for language selection popup to appear 
-14 Feb 2020 18:39:11,0386 nativeApplicationLogger INFO [TestUtil] Clicked on English radio button 
-14 Feb 2020 18:39:14,0284 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 2_SelectLanguage 
-14 Feb 2020 18:39:15,0310 nativeApplicationLogger INFO [TestUtil] Clicked on save changes button 
-14 Feb 2020 18:39:18,0382 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 3_SaveChanges 
-14 Feb 2020 18:39:19,0676 nativeApplicationLogger INFO [TestUtil] Clicked on search input 
-14 Feb 2020 18:39:22,0670 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 4_SearchInput 
-14 Feb 2020 18:39:30,0092 nativeApplicationLogger INFO [TestUtil] Entered product name 
-14 Feb 2020 18:39:32,0939 nativeApplicationLogger INFO [TestUtil] List of Available products 
-14 Feb 2020 18:39:33,0170 nativeApplicationLogger INFO [TestUtil] OnePlus 138.8 cm (55 inches) Q1 Series 4K Certified Android QLED TV 55Q1IN-1 (Black) (Without Stand) 
-14 Feb 2020 18:39:33,0206 nativeApplicationLogger INFO [TestUtil] OnePlus 138.8 cm (55 inches) Q1 Series 4K Certified Android QLED TV 55Q1IN-1 (Black) (Without Stand) 
-14 Feb 2020 18:39:33,0251 nativeApplicationLogger INFO [TestUtil] TCL 163.96 cm (65 inches)  AI 4K UHD Certified Android Smart LED TV 65P8 (Black) (2019 Model) 
-14 Feb 2020 18:39:33,0252 nativeApplicationLogger INFO [TestUtil] Search results displayed 
-14 Feb 2020 18:39:35,0820 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 5_ProductList 
-14 Feb 2020 18:39:36,0090 nativeApplicationLogger INFO [TestUtil] Retrieved product name at second location 
-14 Feb 2020 18:39:36,0819 nativeApplicationLogger INFO [TestUtil] Product is selected on search results page 
-14 Feb 2020 18:39:44,0394 nativeApplicationLogger INFO [TestUtil] Scrolling down  Add to Cart Button... 
-14 Feb 2020 18:39:47,0114 nativeApplicationLogger INFO [TestUtil] Scroll Complete... 
-14 Feb 2020 18:39:49,0777 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 6_Add to cart 
-14 Feb 2020 18:39:54,0809 nativeApplicationLogger INFO [TestUtil] Clicked on Add to Cart Button... 
-14 Feb 2020 18:40:01,0487 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 7_Cart 
-14 Feb 2020 18:40:01,0487 nativeApplicationLogger INFO [TestUtil] Cart popup displayed 
-14 Feb 2020 18:40:03,0851 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 7_Cart 
-14 Feb 2020 18:40:05,0215 nativeApplicationLogger INFO [TestUtil] Clicked on Cart Button... 
-14 Feb 2020 18:40:05,0216 nativeApplicationLogger INFO [TestUtil] Waiting for Proceed to checkout button 
-14 Feb 2020 18:40:07,0947 nativeApplicationLogger INFO [TestUtil] Proceed to checkout button visible 
-14 Feb 2020 18:40:10,0383 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 8_Proceed To Checkout 
-14 Feb 2020 18:40:11,0007 nativeApplicationLogger INFO [TestUtil] Clicked on Proceed to checkout Button... 
-14 Feb 2020 18:40:11,0021 nativeApplicationLogger INFO [TestUtil] Waiting for Deliver to this address button 
-14 Feb 2020 18:40:11,0646 nativeApplicationLogger INFO [TestUtil] Deliver to this address button visible 
-14 Feb 2020 18:40:14,0059 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 8_ShippingAddress 
-14 Feb 2020 18:40:15,0182 nativeApplicationLogger INFO [TestUtil] Clicked on deliver to this address button... 
-14 Feb 2020 18:40:15,0183 nativeApplicationLogger INFO [TestUtil] Waiting for continue button to be displayed 
-14 Feb 2020 18:40:18,0211 nativeApplicationLogger INFO [TestUtil] continue button is Visible 
-14 Feb 2020 18:40:20,0196 nativeApplicationLogger INFO [TestUtil] Captured snapshot of ContinueButton 
-14 Feb 2020 18:40:21,0245 nativeApplicationLogger INFO [TestUtil] Clicked on Continue Button 
-14 Feb 2020 18:40:52,0477 nativeApplicationLogger INFO [TestBase] App Closed... 
-14 Feb 2020 18:40:52,0478 nativeApplicationLogger INFO [TestBase] Session Ended... 
+17 Feb 2020 02:28:13,0238 nativeApplicationLogger INFO [TestUtil] Properties loaded successfully. 
+17 Feb 2020 02:28:13,0348 nativeApplicationLogger INFO [TestUtil] Setting Capabilities : Capabilities {app: C:\Users\Raja\Downloads\Ama..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., deviceName: 8fdb56df, noReset: false, platformName: Android, platformVersion: 9} 
+17 Feb 2020 02:28:23,0621 nativeApplicationLogger INFO [TestUtil] Driver instance created 
+17 Feb 2020 02:28:23,0670 nativeApplicationLogger INFO [TestUtil] Driver Initialized..... 
+17 Feb 2020 02:28:23,0782 nativeApplicationLogger INFO [TestUtil] Waiting for signin page to load 
+17 Feb 2020 02:28:24,0998 nativeApplicationLogger INFO [TestUtil] Signin page is loaded 
+17 Feb 2020 02:28:26,0751 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 1_SigninPage 
+17 Feb 2020 02:28:27,0391 nativeApplicationLogger INFO [TestUtil] Clicked on Continue button 
+17 Feb 2020 02:28:27,0392 nativeApplicationLogger INFO [TestUtil] Waiting for language selection popup to appear 
+17 Feb 2020 02:28:32,0106 nativeApplicationLogger INFO [TestUtil] Clicked on English radio button 
+17 Feb 2020 02:28:34,0572 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 2_SelectLanguage 
+17 Feb 2020 02:28:35,0204 nativeApplicationLogger INFO [TestUtil] Clicked on save changes button 
+17 Feb 2020 02:28:37,0846 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 3_SaveChanges 
+17 Feb 2020 02:28:38,0735 nativeApplicationLogger INFO [TestUtil] Clicked on search input 
+17 Feb 2020 02:28:40,0960 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 4_SearchInput 
+17 Feb 2020 02:28:48,0260 nativeApplicationLogger INFO [TestUtil] Entered product name 
+17 Feb 2020 02:28:50,0607 nativeApplicationLogger INFO [TestUtil] List of Available products 
+17 Feb 2020 02:28:50,0926 nativeApplicationLogger INFO [TestUtil] OnePlus 138.8 cm (55 inches) Q1 Series 4K Certified Android QLED TV 55Q1IN-1 (Black) (Without Stand) 
+17 Feb 2020 02:28:50,0972 nativeApplicationLogger INFO [TestUtil] OnePlus 138.8 cm (55 inches) Q1 Series 4K Certified Android QLED TV 55Q1IN-1 (Black) (Without Stand) 
+17 Feb 2020 02:28:51,0037 nativeApplicationLogger INFO [TestUtil] TCL 163.96 cm (65 inches)  AI 4K UHD Certified Android Smart LED TV 65P8 (Black) (2019 Model) 
+17 Feb 2020 02:28:51,0037 nativeApplicationLogger INFO [TestUtil] Search results displayed 
+17 Feb 2020 02:28:53,0220 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 5_ProductList 
+17 Feb 2020 02:28:53,0547 nativeApplicationLogger INFO [TestUtil] Retrieved product name at second location 
+17 Feb 2020 02:28:54,0138 nativeApplicationLogger INFO [TestUtil] TCL 163.96 cm (65 inches)  AI 4K UHD Certified Android Smart LED TV 65P8 (Black) (2019 Model)  Product is selected on search results page 
+17 Feb 2020 02:29:02,0287 nativeApplicationLogger INFO [TestUtil] Scrolling down  Add to Cart Button... 
+17 Feb 2020 02:29:04,0489 nativeApplicationLogger INFO [TestUtil] Scroll Complete... 
+17 Feb 2020 02:29:06,0336 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 6_Add to cart 
+17 Feb 2020 02:29:13,0073 nativeApplicationLogger INFO [TestUtil] Clicked on Add to Cart Button... 
+17 Feb 2020 02:29:18,0834 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 7_Cart 
+17 Feb 2020 02:29:18,0834 nativeApplicationLogger INFO [TestUtil] Cart popup displayed 
+17 Feb 2020 02:29:20,0765 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 7_Cart Screen popup 
+17 Feb 2020 02:29:21,0249 nativeApplicationLogger INFO [TestUtil] Clicked on Cart Button... 
+17 Feb 2020 02:29:21,0249 nativeApplicationLogger INFO [TestUtil] Waiting for Proceed to checkout button 
+17 Feb 2020 02:29:24,0058 nativeApplicationLogger INFO [TestUtil] Proceed to checkout button visible 
+17 Feb 2020 02:29:25,0943 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 8_Proceed To Checkout 
+17 Feb 2020 02:29:26,0564 nativeApplicationLogger INFO [TestUtil] Clicked on Proceed to checkout Button... 
+17 Feb 2020 02:29:26,0575 nativeApplicationLogger INFO [TestUtil] Waiting for Deliver to this address button 
+17 Feb 2020 02:29:27,0142 nativeApplicationLogger INFO [TestUtil] Deliver to this address button visible 
+17 Feb 2020 02:29:29,0079 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 9_ShippingAddress 
+17 Feb 2020 02:29:31,0072 nativeApplicationLogger INFO [TestUtil] Clicked on deliver to this address button... 
+17 Feb 2020 02:29:31,0073 nativeApplicationLogger INFO [TestUtil] Waiting for continue button to be displayed 
+17 Feb 2020 02:29:32,0759 nativeApplicationLogger INFO [TestUtil] continue button is Visible 
+17 Feb 2020 02:29:34,0428 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 10_ContinueButton 
+17 Feb 2020 02:29:35,0451 nativeApplicationLogger INFO [TestUtil] Clicked on Continue Button 
+17 Feb 2020 02:29:35,0460 nativeApplicationLogger INFO [TestUtil] Scrolling to view net banking option 
+17 Feb 2020 02:29:37,0340 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 11_Net Banking 
+17 Feb 2020 02:29:40,0970 nativeApplicationLogger INFO [TestUtil] Scroll Complete and net banking option is visible 
+17 Feb 2020 02:29:49,0047 nativeApplicationLogger INFO [TestUtil] Clicked on net banking radio button 
+17 Feb 2020 02:29:50,0943 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 12_Net Banking radio 
+17 Feb 2020 02:29:51,0526 nativeApplicationLogger INFO [TestUtil] Clicked on bank dropdown 
+17 Feb 2020 02:29:53,0823 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 13_Bank List 
+17 Feb 2020 02:30:01,0441 nativeApplicationLogger INFO [TestUtil] Continue button is clicked 
+17 Feb 2020 02:30:07,0303 nativeApplicationLogger INFO [TestUtil] Product name captured in checkout.. 
+17 Feb 2020 02:30:09,0456 nativeApplicationLogger INFO [TestUtil] Captured snapshot of 14_checkout 
+17 Feb 2020 02:30:09,0894 nativeApplicationLogger INFO [TestUtil] App Closed... 
+17 Feb 2020 02:30:10,0842 nativeApplicationLogger INFO [TestUtil] Session Ended... 

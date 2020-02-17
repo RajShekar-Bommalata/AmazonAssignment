@@ -36,11 +36,10 @@ public class TestBase {
 			FileInputStream inStream = new FileInputStream(config);
 			prop = new Properties();
 			prop.load(inStream);
-			log.info("Properties loaded successfully.");
 		}
 
 		catch (IOException e) {
-			log.error("Properties File Not Found");
+			TestUtil.logErrorMessage("Properties File Not Found");
 			e.printStackTrace();
 		}
 	}
@@ -52,11 +51,11 @@ public class TestBase {
 			FileInputStream inStream = new FileInputStream(config);
 			prop = new Properties();
 			prop.load(inStream);
-			log.info("Properties loaded successfully.");
+			TestUtil.logMessage("Properties loaded successfully.");
 		}
 
 		catch (IOException e) {
-			log.error("Properties File Not Found");
+			TestUtil.logErrorMessage("Properties File Not Found");
 			e.printStackTrace();
 		}
 		/**
@@ -74,12 +73,12 @@ public class TestBase {
 		cap.setCapability(MobileCapabilityType.NO_RESET, false);
 
 		try {
-			log.info("Setting Capabilities : " + cap);
+			TestUtil.logMessage("Setting Capabilities : " + cap);
 			driver = new AndroidDriver<AndroidElement>(
 					new URL("http://" + prop.getProperty("app.appiumServerURI") + "/wd/hub"), cap);
-			log.info("Driver instance created");
+			TestUtil.logMessage("Driver instance created");
 		} catch (Exception e) {
-			log.error("Unable to create driver instance");
+			TestUtil.logErrorMessage("Unable to create driver instance");
 			e.printStackTrace();
 		}
 
@@ -88,9 +87,7 @@ public class TestBase {
 				TimeUnit.SECONDS);
 		// Define Explicit wait
 		WebDriverWait wait = new WebDriverWait(driver, Integer.parseInt(prop.getProperty("app.explicitWait")));
-
-		log.info("Driver Initialized");
-		Reporter.log("Driver Initialized.....");
+		TestUtil.logMessage("Driver Initialized.....");
 
 	}
 
@@ -105,8 +102,8 @@ public class TestBase {
 	@AfterSuite
 	public void TeardownTest() {
 		driver.closeApp();
-		log.info("App Closed...");
+		TestUtil.logMessage("App Closed...");
 		driver.quit();
-		log.info("Session Ended...");
+		TestUtil.logMessage("Session Ended...");
 	}
 }

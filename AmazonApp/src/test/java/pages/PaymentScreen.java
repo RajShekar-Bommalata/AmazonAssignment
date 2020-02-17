@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.Reporter;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -47,12 +46,11 @@ public class PaymentScreen extends TestUtil {
 			// clicking did not work
 			Thread.sleep(5000);
 			radioButtonNetBanking.click();
-			logMessageWithScreenShot("Clicked on net banking radio button", "Net Banking radio");
+			logMessageWithScreenShot("Clicked on net banking radio button", "12_Net Banking radio");
 
 		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_clickNetBankingRadioButton");
 			Assert.fail("Failed to click NetBanking button");
-			logMessageWithScreenShot("Failed to click NetBanking button", "Err_clickNetBankingRadioButton");
-
 		}
 	}
 
@@ -62,7 +60,7 @@ public class PaymentScreen extends TestUtil {
 	public void selectBankName() {
 		try {
 			dropDownBankName.click();
-			logMessageWithScreenShot("Clicked on bank dropdown", "12_Bank List");
+			logMessageWithScreenShot("Clicked on bank dropdown", "13_Bank List");
 			for (WebElement bank : bankOptions) {
 				if (bank.getText().equalsIgnoreCase(datafile.getBankName())) {
 					bank.click();
@@ -70,8 +68,8 @@ public class PaymentScreen extends TestUtil {
 				}
 			}
 		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_selectBankName");
 			Assert.fail("Selecting Bank Name Failed");
-			logMessageWithScreenShot("Failed to select bank name", "Err_selectBankName");
 		}
 	}
 
@@ -82,8 +80,9 @@ public class PaymentScreen extends TestUtil {
 		try {
 			waitForElement(driver, buttonContinue);
 			buttonContinue.click();
-			Reporter.log("Continue button is clicked");
+			logMessage("Continue button is clicked");
 		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_selectBankName");
 			Assert.fail("Failed to click continue button");
 		}
 	}

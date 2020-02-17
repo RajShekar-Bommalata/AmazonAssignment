@@ -38,7 +38,7 @@ public class PDP extends TestUtil {
 		try {
 			waitForElement(driver, addToCartButton);
 			logMessage("Scrolling down  Add to Cart Button...");
-			for (int scrollCount = 0; scrollCount < 5; scrollCount++) {
+			for (int scrollCount = 0; scrollCount < 4; scrollCount++) {
 				scrollDown();
 			}
 			logMessageWithScreenShot("Scroll Complete...", "6_Add to cart");
@@ -46,8 +46,8 @@ public class PDP extends TestUtil {
 			addToCartButton.click();
 			logMessage("Clicked on Add to Cart Button...");
 		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_addProductToCart");
 			Assert.fail("Failed to click on Add to Cart Button");
-			logMessageWithScreenShot("Failed to click on Add to Cart Button", "Err_addProductToCart");
 		}
 	}
 
@@ -62,8 +62,8 @@ public class PDP extends TestUtil {
 			cartButton.click();
 			logMessage("Clicked on Cart Button...");
 		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_navigateToCartScreen");
 			Assert.fail("Failed to click on Cart Button");
-			logMessageWithScreenShot("Failed to click on cart Button", "Err_navigateToCartScreen");
 		}
 	}
 
@@ -78,8 +78,8 @@ public class PDP extends TestUtil {
 			proceedToCheckoutButton.click();
 			logMessage("Clicked on Proceed to checkout Button...");
 		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_selectBankName");
 			Assert.fail("Failed to click on Proceed to checkout button");
-			logMessageWithScreenShot("Failed to click on Proceed to checkout button", "Err_proceedToCheckout");
 		}
 	}
 }

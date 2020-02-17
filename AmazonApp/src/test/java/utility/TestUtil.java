@@ -40,7 +40,13 @@ public class TestUtil extends TestBase {
 	public static void logMessage(String msg) {
 		Reporter.log(msg);
 		log.info(msg);
-		System.out.println(msg);
+	}
+	/**
+	 * This method only logs error message in report and custom logs
+	 */
+	public static void logErrorMessage(String msg) {
+		Reporter.log(msg);
+		log.error(msg);
 	}
 
 	/**
@@ -50,10 +56,20 @@ public class TestUtil extends TestBase {
 	public static void logMessageWithScreenShot(String msg, String SSname) {
 		Reporter.log(msg);
 		log.info(msg);
-		System.out.println(msg);
 		takeScreenshot(SSname);
 	}
 
+	/**
+	 * This method only logs message in report and custom logs. Also captures
+	 * screenshots
+	 */
+	public static void logErrorMessageWithScreenShot(String msg, String SSname) {
+		Reporter.log(msg);
+		log.error(msg);
+		System.out.println(msg);
+		takeScreenshot(SSname);
+	}
+	
 	/**
 	 * Screenshot code
 	 */

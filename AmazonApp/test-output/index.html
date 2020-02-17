@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Amazon_App">
-                    <span>C:\Users\Raja\eclipse-workspace\AmazonApp\testng.xml</span>
+                    <span>C:\Users\Raja\git\AmazonAssignment\AmazonApp\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Amazon_App" title="tests.AddToCart" hash-for-method="AddItemToCart">AddItemToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Amazon_App" title="tests.Checkout" hash-for-method="itemCheckout">itemCheckout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -232,10 +237,25 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Amazon_App-class-passed -->
+          <div class="suite-Amazon_App-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Checkout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="itemCheckout">
+                  </a> <!-- itemCheckout -->
+                  <span class="method-name">itemCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Amazon_App-class-passed -->
         </div> <!-- panel Amazon_App -->
         <div panel-name="test-xml-Amazon_App" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Raja\eclipse-workspace\AmazonApp\testng.xml</span>
+            <span class="header-content">C:\Users\Raja\git\AmazonAssignment\AmazonApp\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -250,6 +270,7 @@
       &lt;class name=&quot;tests.AddToCart&quot;/&gt;
       &lt;class name=&quot;tests.ShippingDetails&quot;/&gt;
       &lt;class name=&quot;tests.PaymentDetails&quot;/&gt;
+      &lt;class name=&quot;tests.Checkout&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Amazon Android App --&gt;
 &lt;/suite&gt; &lt;!-- Amazon App --&gt;
@@ -263,7 +284,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Amazon Android App (6 classes)</span>
+                <span class="test-name">Amazon Android App (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -289,31 +310,35 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AddItemToCart')
 data.setCell(0, 2, 'tests.AddToCart')
-data.setCell(0, 3, 34186);
+data.setCell(0, 3, 31973);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'selectPaymentDetails')
 data.setCell(1, 2, 'tests.PaymentDetails')
-data.setCell(1, 3, 31147);
+data.setCell(1, 3, 25988);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginAndSelectLanguage')
 data.setCell(2, 2, 'tests.Home')
-data.setCell(2, 3, 16911);
+data.setCell(2, 3, 14133);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'searchForAProduct')
 data.setCell(3, 2, 'tests.SearchProduct')
-data.setCell(3, 3, 11702);
+data.setCell(3, 3, 10409);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'selectOrEnterShippingDetails')
 data.setCell(4, 2, 'tests.ShippingDetails')
-data.setCell(4, 3, 10235);
+data.setCell(4, 3, 8884);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'selectAProduct')
-data.setCell(5, 2, 'tests.SelectProduct')
-data.setCell(5, 3, 6721);
+data.setCell(5, 1, 'itemCheckout')
+data.setCell(5, 2, 'tests.Checkout')
+data.setCell(5, 3, 8014);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'selectAProduct')
+data.setCell(6, 2, 'tests.SelectProduct')
+data.setCell(6, 3, 6323);
 window.suiteTableData['Amazon_App']= { tableData: data, tableDiv: 'times-div-Amazon_App'}
 return data;
 }
@@ -330,23 +355,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">selectOrEnterShippingDetails</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Waiting for Deliver to this address button</span>
-                <span class="reporter-method-output">Deliver to this address button visible</span>
-                <span class="reporter-method-output">Captured snapshot of 8_ShippingAddress</span>
-                <span class="reporter-method-output">Clicked on deliver to this address button...</span>
-                <span class="reporter-method-output">Waiting for continue button to be displayed</span>
-                <span class="reporter-method-output">continue button is Visible</span>
-                <span class="reporter-method-output">Captured snapshot of ContinueButton</span>
-                <span class="reporter-method-output">Clicked on Continue Button</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">loginAndSelectLanguage</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Waiting for signin page to load</span>
-                <span class="reporter-method-output">Signin page to loaded</span>
+                <span class="reporter-method-output">Signin page is loaded</span>
                 <span class="reporter-method-output">Captured snapshot of 1_SigninPage</span>
                 <span class="reporter-method-output">Clicked on Continue button</span>
                 <span class="reporter-method-output">Waiting for language selection popup to appear</span>
@@ -357,27 +369,29 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">AddItemToCart</span>
+              <span class="reporter-method-name">selectPaymentDetails</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Scrolling down  Add to Cart Button...</span>
-                <span class="reporter-method-output">Scroll Complete...</span>
-                <span class="reporter-method-output">Captured snapshot of 6_Add to cart</span>
-                <span class="reporter-method-output">Clicked on Add to Cart Button...</span>
-                <span class="reporter-method-output">Captured snapshot of 7_Cart</span>
-                <span class="reporter-method-output">Cart popup displayed</span>
-                <span class="reporter-method-output">Captured snapshot of 7_Cart</span>
-                <span class="reporter-method-output">Clicked on Cart Button...</span>
-                <span class="reporter-method-output">Waiting for Proceed to checkout button</span>
-                <span class="reporter-method-output">Proceed to checkout button visible</span>
-                <span class="reporter-method-output">Captured snapshot of 8_Proceed To Checkout</span>
-                <span class="reporter-method-output">Clicked on Proceed to checkout Button...</span>
+                <span class="reporter-method-output">Scrolling to view net banking option</span>
+                <span class="reporter-method-output">Captured snapshot of 11_Net Banking</span>
+                <span class="reporter-method-output">Scroll Complete and net banking option is visible</span>
+                <span class="reporter-method-output">Clicked on net banking radio button</span>
+                <span class="reporter-method-output">Captured snapshot of 12_Net Banking radio</span>
+                <span class="reporter-method-output">Clicked on bank dropdown</span>
+                <span class="reporter-method-output">Captured snapshot of 13_Bank List</span>
+                <span class="reporter-method-output">Continue button is clicked</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">selectPaymentDetails</span>
+              <span class="reporter-method-name">selectOrEnterShippingDetails</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">NetBanking option is clicked</span>
-                <span class="reporter-method-output">Continue button is clicked</span>
+                <span class="reporter-method-output">Waiting for Deliver to this address button</span>
+                <span class="reporter-method-output">Deliver to this address button visible</span>
+                <span class="reporter-method-output">Captured snapshot of 9_ShippingAddress</span>
+                <span class="reporter-method-output">Clicked on deliver to this address button...</span>
+                <span class="reporter-method-output">Waiting for continue button to be displayed</span>
+                <span class="reporter-method-output">continue button is Visible</span>
+                <span class="reporter-method-output">Captured snapshot of 10_ContinueButton</span>
+                <span class="reporter-method-output">Clicked on Continue Button</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -390,7 +404,7 @@ return data;
                 <span class="reporter-method-output">Search results displayed</span>
                 <span class="reporter-method-output">Captured snapshot of 5_ProductList</span>
                 <span class="reporter-method-output">Retrieved product name at second location</span>
-                <span class="reporter-method-output">Product is selected on search results page</span>
+                <span class="reporter-method-output">TCL 163.96 cm (65 inches)  AI 4K UHD Certified Android Smart LED TV 65P8 (Black) (2019 Model)  Product is selected on search results page</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -401,11 +415,35 @@ return data;
                 <span class="reporter-method-output">Entered product name</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AddItemToCart</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Scrolling down  Add to Cart Button...</span>
+                <span class="reporter-method-output">Scroll Complete...</span>
+                <span class="reporter-method-output">Captured snapshot of 6_Add to cart</span>
+                <span class="reporter-method-output">Clicked on Add to Cart Button...</span>
+                <span class="reporter-method-output">Captured snapshot of 7_Cart</span>
+                <span class="reporter-method-output">Cart popup displayed</span>
+                <span class="reporter-method-output">Captured snapshot of 7_Cart Screen popup</span>
+                <span class="reporter-method-output">Clicked on Cart Button...</span>
+                <span class="reporter-method-output">Waiting for Proceed to checkout button</span>
+                <span class="reporter-method-output">Proceed to checkout button visible</span>
+                <span class="reporter-method-output">Captured snapshot of 8_Proceed To Checkout</span>
+                <span class="reporter-method-output">Clicked on Proceed to checkout Button...</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">itemCheckout</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Product name captured in checkout..</span>
+                <span class="reporter-method-output">Captured snapshot of 14_checkout</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Amazon_App" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">15 ignored methods</span>
+            <span class="header-content">18 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -463,6 +501,17 @@ return data;
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.Checkout</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ReadProperties</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">TeardownTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Amazon_App" class="panel">
@@ -478,53 +527,60 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">setup</span>
-                <span class="method-start">16 ms</span>
+                <span class="method-start">15 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">loginAndSelectLanguage</span>
-                <span class="method-start">9925 ms</span>
+                <span class="method-start">10491 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SearchProduct</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">searchForAProduct</span>
-                <span class="method-start">26843 ms</span>
+                <span class="method-start">24630 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SelectProduct</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">selectAProduct</span>
-                <span class="method-start">38550 ms</span>
+                <span class="method-start">35043 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AddToCart</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">AddItemToCart</span>
-                <span class="method-start">45274 ms</span>
+                <span class="method-start">41369 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ShippingDetails</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">selectOrEnterShippingDetails</span>
-                <span class="method-start">79463 ms</span>
+                <span class="method-start">73344 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.PaymentDetails</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">selectPaymentDetails</span>
-                <span class="method-start">89700 ms</span>
+                <span class="method-start">82230 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Checkout</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">itemCheckout</span>
+                <span class="method-start">108222 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.Home</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">TeardownTest</span>
-                <span class="method-start">120929 ms</span>
+                <span class="method-start">116306 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

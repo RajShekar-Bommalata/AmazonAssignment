@@ -25,8 +25,8 @@ public class HomeScreen extends TestUtil {
 	}
 
 	/**
-	 * This method clicks on continue button on sign in page. 
-	 * App uses already signed in account
+	 * This method clicks on continue button on sign in page. App uses already
+	 * signed in account
 	 */
 	public void clickOnContinueButton() {
 		try {
@@ -37,8 +37,8 @@ public class HomeScreen extends TestUtil {
 			continue_button.click();
 			logMessage("Clicked on Continue button");
 		} catch (Exception e) {
-			Assert.fail("Failed to click continue button");
-			logMessageWithScreenShot("Unable to click on continue button", "Err_clickOnContinueButton");
+			logErrorMessageWithScreenShot(e.toString(), "Err_clickOnContinueButton");
+			Assert.fail("Failed to Click on Continue button");
 		}
 	}
 
@@ -54,8 +54,8 @@ public class HomeScreen extends TestUtil {
 			english_radio.click();
 			logMessageWithScreenShot("Clicked on English radio button", "2_SelectLanguage");
 		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_selectLanguageButton");
 			Assert.fail("Unable to select language button");
-			logMessageWithScreenShot("Unable to select language button", "Err_selectLanguageButton");
 		}
 	}
 
@@ -68,8 +68,8 @@ public class HomeScreen extends TestUtil {
 			saveChanges_button.click();
 			logMessageWithScreenShot("Clicked on save changes button", "3_SaveChanges");
 		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_clickOnSaveChangesButton");
 			Assert.fail("Unable to click on save changes button");
-			logMessageWithScreenShot("Unable to click on save changes button", "Err_clickOnSaveChangesButton");
 		}
 
 	}

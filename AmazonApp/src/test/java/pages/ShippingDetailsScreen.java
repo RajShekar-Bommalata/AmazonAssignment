@@ -54,8 +54,8 @@ public class ShippingDetailsScreen extends TestUtil {
 			deliverToThisAddressButton.click();
 			logMessage("Clicked on deliver to this address button...");
 		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_selectDefaultAddress");
 			Assert.fail("Failed to click on deliver to this address button");
-			logMessageWithScreenShot("Failed to click on Deliver to this address button", "Err_selectDefaultAddress");
 		}
 	}
 
@@ -129,8 +129,8 @@ public class ShippingDetailsScreen extends TestUtil {
 			buttonContinue.click();
 			logMessage("Clicked on Continue Button");
 		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_clickOnContinueButton");
 			Assert.fail("Failed to click on continue button ");
-			logMessageWithScreenShot("Failed to continue button ", "Err_clickOnContinueButton");
 		}
 	}
 }

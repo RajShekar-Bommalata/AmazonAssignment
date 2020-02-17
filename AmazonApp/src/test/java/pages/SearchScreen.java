@@ -25,8 +25,8 @@ public class SearchScreen extends TestUtil {
 			search_input.click();
 			logMessageWithScreenShot("Clicked on search input", "4_SearchInput");
 		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_clickOnSearchInput");
 			Assert.fail("Unable to click on search input");
-			logMessageWithScreenShot("Unable to click on search input", "Err_clickOnSearchInput");
 		}
 	}
 
@@ -35,10 +35,9 @@ public class SearchScreen extends TestUtil {
 		try {
 			search_input.sendKeys(productName, "\n");
 			logMessage("Entered product name");
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
+			logErrorMessageWithScreenShot(e.toString(), "Err_searchForProduct");
 			Assert.fail("Unable to input value in search box");
-			logMessageWithScreenShot("Unable to input value in search box", "Err_searchForProduct");
 		}
 	}
 }

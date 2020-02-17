@@ -10,7 +10,7 @@
 			<class name="tests.AddToCart" />
 			<class name="tests.ShippingDetails" />
 			<class name="tests.PaymentDetails" />
-			<class name="tests.Checkout" />
+			<class name="tests.Checkout" /> 
 		</classes>
 	</test>
 </suite> <!-- Suite -->

@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon App]">
   <test thread-count="5" name="Amazon Android App(failed)">
     <classes>
-      <class name="tests.PaymentDetails">
+      <class name="tests.Home">
         <methods>
           <include name="ReadProperties"/>
           <include name="setup"/>
           <include name="TeardownTest"/>
-          <include name="selectPaymentDetails"/>
+          <include name="loginAndSelectLanguage"/>
         </methods>
-      </class> <!-- tests.PaymentDetails -->
+      </class> <!-- tests.Home -->
     </classes>
   </test> <!-- Amazon Android App(failed) -->
 </suite> <!-- Failed suite [Amazon App] -->

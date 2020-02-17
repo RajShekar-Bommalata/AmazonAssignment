@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="15" total="21" passed="6">
+<testng-results skipped="0" failed="0" ignored="18" total="25" passed="7">
   <reporter-output>
+    <line>
+      <![CDATA[Properties loaded successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Setting Capabilities : Capabilities {app: C:\Users\Raja\Downloads\Ama..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., deviceName: 8fdb56df, noReset: false, platformName: Android, platformVersion: 9}]]>
+    </line>
+    <line>
+      <![CDATA[Driver instance created]]>
+    </line>
     <line>
       <![CDATA[Driver Initialized.....]]>
     </line>
@@ -8,7 +17,7 @@
       <![CDATA[Waiting for signin page to load]]>
     </line>
     <line>
-      <![CDATA[Signin page to loaded]]>
+      <![CDATA[Signin page is loaded]]>
     </line>
     <line>
       <![CDATA[Captured snapshot of 1_SigninPage]]>
@@ -62,7 +71,7 @@
       <![CDATA[Retrieved product name at second location]]>
     </line>
     <line>
-      <![CDATA[Product is selected on search results page]]>
+      <![CDATA[TCL 163.96 cm (65 inches)  AI 4K UHD Certified Android Smart LED TV 65P8 (Black) (2019 Model)  Product is selected on search results page]]>
     </line>
     <line>
       <![CDATA[Scrolling down  Add to Cart Button...]]>
@@ -83,7 +92,7 @@
       <![CDATA[Cart popup displayed]]>
     </line>
     <line>
-      <![CDATA[Captured snapshot of 7_Cart]]>
+      <![CDATA[Captured snapshot of 7_Cart Screen popup]]>
     </line>
     <line>
       <![CDATA[Clicked on Cart Button...]]>
@@ -107,7 +116,7 @@
       <![CDATA[Deliver to this address button visible]]>
     </line>
     <line>
-      <![CDATA[Captured snapshot of 8_ShippingAddress]]>
+      <![CDATA[Captured snapshot of 9_ShippingAddress]]>
     </line>
     <line>
       <![CDATA[Clicked on deliver to this address button...]]>
@@ -119,27 +128,75 @@
       <![CDATA[continue button is Visible]]>
     </line>
     <line>
-      <![CDATA[Captured snapshot of ContinueButton]]>
+      <![CDATA[Captured snapshot of 10_ContinueButton]]>
     </line>
     <line>
       <![CDATA[Clicked on Continue Button]]>
     </line>
     <line>
-      <![CDATA[NetBanking option is clicked]]>
+      <![CDATA[Scrolling to view net banking option]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 11_Net Banking]]>
+    </line>
+    <line>
+      <![CDATA[Scroll Complete and net banking option is visible]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on net banking radio button]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 12_Net Banking radio]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on bank dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 13_Bank List]]>
     </line>
     <line>
       <![CDATA[Continue button is clicked]]>
     </line>
+    <line>
+      <![CDATA[Product name captured in checkout..]]>
+    </line>
+    <line>
+      <![CDATA[Captured snapshot of 14_checkout]]>
+    </line>
+    <line>
+      <![CDATA[App Closed...]]>
+    </line>
+    <line>
+      <![CDATA[Session Ended...]]>
+    </line>
   </reporter-output>
-  <suite name="Amazon App" duration-ms="110972" started-at="2020-02-15T02:39:01Z" finished-at="2020-02-15T02:40:52Z">
+  <suite name="Amazon App" duration-ms="105795" started-at="2020-02-17T10:28:23Z" finished-at="2020-02-17T10:30:09Z">
     <groups>
     </groups>
-    <test name="Amazon Android App" duration-ms="110972" started-at="2020-02-15T02:39:01Z" finished-at="2020-02-15T02:40:52Z">
+    <test name="Amazon Android App" duration-ms="105795" started-at="2020-02-17T10:28:23Z" finished-at="2020-02-17T10:30:09Z">
       <class name="tests.PaymentDetails">
-        <test-method status="PASS" signature="selectPaymentDetails()[pri:0, instance:tests.PaymentDetails@528931cf]" name="selectPaymentDetails" duration-ms="31147" started-at="2020-02-15T02:40:21Z" finished-at="2020-02-15T02:40:52Z">
+        <test-method status="PASS" signature="selectPaymentDetails()[pri:0, instance:tests.PaymentDetails@ea1a8d5]" name="selectPaymentDetails" duration-ms="25988" started-at="2020-02-17T10:29:35Z" finished-at="2020-02-17T10:30:01Z">
           <reporter-output>
             <line>
-              <![CDATA[NetBanking option is clicked]]>
+              <![CDATA[Scrolling to view net banking option]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 11_Net Banking]]>
+            </line>
+            <line>
+              <![CDATA[Scroll Complete and net banking option is visible]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on net banking radio button]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 12_Net Banking radio]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on bank dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 13_Bank List]]>
             </line>
             <line>
               <![CDATA[Continue button is clicked]]>
@@ -148,7 +205,7 @@
         </test-method> <!-- selectPaymentDetails -->
       </class> <!-- tests.PaymentDetails -->
       <class name="tests.AddToCart">
-        <test-method status="PASS" signature="AddItemToCart()[pri:0, instance:tests.AddToCart@7a1ebcd8]" name="AddItemToCart" duration-ms="34186" started-at="2020-02-15T02:39:36Z" finished-at="2020-02-15T02:40:11Z">
+        <test-method status="PASS" signature="AddItemToCart()[pri:0, instance:tests.AddToCart@5faeada1]" name="AddItemToCart" duration-ms="31973" started-at="2020-02-17T10:28:54Z" finished-at="2020-02-17T10:29:26Z">
           <reporter-output>
             <line>
               <![CDATA[Scrolling down  Add to Cart Button...]]>
@@ -169,7 +226,7 @@
               <![CDATA[Cart popup displayed]]>
             </line>
             <line>
-              <![CDATA[Captured snapshot of 7_Cart]]>
+              <![CDATA[Captured snapshot of 7_Cart Screen popup]]>
             </line>
             <line>
               <![CDATA[Clicked on Cart Button...]]>
@@ -190,7 +247,7 @@
         </test-method> <!-- AddItemToCart -->
       </class> <!-- tests.AddToCart -->
       <class name="tests.ShippingDetails">
-        <test-method status="PASS" signature="selectOrEnterShippingDetails()[pri:0, instance:tests.ShippingDetails@5faeada1]" name="selectOrEnterShippingDetails" duration-ms="10235" started-at="2020-02-15T02:40:11Z" finished-at="2020-02-15T02:40:21Z">
+        <test-method status="PASS" signature="selectOrEnterShippingDetails()[pri:0, instance:tests.ShippingDetails@528931cf]" name="selectOrEnterShippingDetails" duration-ms="8884" started-at="2020-02-17T10:29:26Z" finished-at="2020-02-17T10:29:35Z">
           <reporter-output>
             <line>
               <![CDATA[Waiting for Deliver to this address button]]>
@@ -199,7 +256,7 @@
               <![CDATA[Deliver to this address button visible]]>
             </line>
             <line>
-              <![CDATA[Captured snapshot of 8_ShippingAddress]]>
+              <![CDATA[Captured snapshot of 9_ShippingAddress]]>
             </line>
             <line>
               <![CDATA[Clicked on deliver to this address button...]]>
@@ -211,7 +268,7 @@
               <![CDATA[continue button is Visible]]>
             </line>
             <line>
-              <![CDATA[Captured snapshot of ContinueButton]]>
+              <![CDATA[Captured snapshot of 10_ContinueButton]]>
             </line>
             <line>
               <![CDATA[Clicked on Continue Button]]>
@@ -220,7 +277,7 @@
         </test-method> <!-- selectOrEnterShippingDetails -->
       </class> <!-- tests.ShippingDetails -->
       <class name="tests.SearchProduct">
-        <test-method status="PASS" signature="searchForAProduct()[pri:0, instance:tests.SearchProduct@11438d26]" name="searchForAProduct" duration-ms="11702" started-at="2020-02-15T02:39:18Z" finished-at="2020-02-15T02:39:30Z">
+        <test-method status="PASS" signature="searchForAProduct()[pri:0, instance:tests.SearchProduct@34cd072c]" name="searchForAProduct" duration-ms="10409" started-at="2020-02-17T10:28:37Z" finished-at="2020-02-17T10:28:48Z">
           <reporter-output>
             <line>
               <![CDATA[Clicked on search input]]>
@@ -235,24 +292,33 @@
         </test-method> <!-- searchForAProduct -->
       </class> <!-- tests.SearchProduct -->
       <class name="tests.Home">
-        <test-method status="PASS" signature="ReadProperties()[pri:0, instance:tests.Home@458c1321]" name="ReadProperties" is-config="true" duration-ms="16" started-at="2020-02-15T02:38:51Z" finished-at="2020-02-15T02:38:51Z">
+        <test-method status="PASS" signature="ReadProperties()[pri:0, instance:tests.Home@11438d26]" name="ReadProperties" is-config="true" duration-ms="15" started-at="2020-02-17T10:28:13Z" finished-at="2020-02-17T10:28:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReadProperties -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Home@458c1321]" name="setup" is-config="true" duration-ms="9862" started-at="2020-02-15T02:38:51Z" finished-at="2020-02-15T02:39:01Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Home@11438d26]" name="setup" is-config="true" duration-ms="10433" started-at="2020-02-17T10:28:13Z" finished-at="2020-02-17T10:28:23Z">
           <reporter-output>
+            <line>
+              <![CDATA[Properties loaded successfully.]]>
+            </line>
+            <line>
+              <![CDATA[Setting Capabilities : Capabilities {app: C:\Users\Raja\Downloads\Ama..., appActivity: com.amazon.mShop.splashscre..., appPackage: com.amazon.mShop.android.sh..., deviceName: 8fdb56df, noReset: false, platformName: Android, platformVersion: 9}]]>
+            </line>
+            <line>
+              <![CDATA[Driver instance created]]>
+            </line>
             <line>
               <![CDATA[Driver Initialized.....]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginAndSelectLanguage()[pri:0, instance:tests.Home@458c1321]" name="loginAndSelectLanguage" duration-ms="16911" started-at="2020-02-15T02:39:01Z" finished-at="2020-02-15T02:39:18Z">
+        <test-method status="PASS" signature="loginAndSelectLanguage()[pri:0, instance:tests.Home@11438d26]" name="loginAndSelectLanguage" duration-ms="14133" started-at="2020-02-17T10:28:23Z" finished-at="2020-02-17T10:28:37Z">
           <reporter-output>
             <line>
               <![CDATA[Waiting for signin page to load]]>
             </line>
             <line>
-              <![CDATA[Signin page to loaded]]>
+              <![CDATA[Signin page is loaded]]>
             </line>
             <line>
               <![CDATA[Captured snapshot of 1_SigninPage]]>
@@ -277,13 +343,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginAndSelectLanguage -->
-        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:tests.Home@458c1321]" name="TeardownTest" is-config="true" duration-ms="2" started-at="2020-02-15T02:40:52Z" finished-at="2020-02-15T02:40:52Z">
+        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:tests.Home@11438d26]" name="TeardownTest" is-config="true" duration-ms="1313" started-at="2020-02-17T10:30:09Z" finished-at="2020-02-17T10:30:10Z">
           <reporter-output>
+            <line>
+              <![CDATA[App Closed...]]>
+            </line>
+            <line>
+              <![CDATA[Session Ended...]]>
+            </line>
           </reporter-output>
         </test-method> <!-- TeardownTest -->
       </class> <!-- tests.Home -->
       <class name="tests.SelectProduct">
-        <test-method status="PASS" signature="selectAProduct()[pri:0, instance:tests.SelectProduct@34cd072c]" name="selectAProduct" duration-ms="6721" started-at="2020-02-15T02:39:30Z" finished-at="2020-02-15T02:39:36Z">
+        <test-method status="PASS" signature="selectAProduct()[pri:0, instance:tests.SelectProduct@7a1ebcd8]" name="selectAProduct" duration-ms="6323" started-at="2020-02-17T10:28:48Z" finished-at="2020-02-17T10:28:54Z">
           <reporter-output>
             <line>
               <![CDATA[List of Available products]]>
@@ -307,11 +379,23 @@
               <![CDATA[Retrieved product name at second location]]>
             </line>
             <line>
-              <![CDATA[Product is selected on search results page]]>
+              <![CDATA[TCL 163.96 cm (65 inches)  AI 4K UHD Certified Android Smart LED TV 65P8 (Black) (2019 Model)  Product is selected on search results page]]>
             </line>
           </reporter-output>
         </test-method> <!-- selectAProduct -->
       </class> <!-- tests.SelectProduct -->
+      <class name="tests.Checkout">
+        <test-method status="PASS" signature="itemCheckout()[pri:0, instance:tests.Checkout@1563da5]" name="itemCheckout" duration-ms="8014" started-at="2020-02-17T10:30:01Z" finished-at="2020-02-17T10:30:09Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Product name captured in checkout..]]>
+            </line>
+            <line>
+              <![CDATA[Captured snapshot of 14_checkout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- itemCheckout -->
+      </class> <!-- tests.Checkout -->
     </test> <!-- Amazon Android App -->
   </suite> <!-- Amazon App -->
 </testng-results>
