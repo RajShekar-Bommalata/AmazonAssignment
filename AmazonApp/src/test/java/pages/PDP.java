@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -32,6 +31,9 @@ public class PDP extends TestUtil {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * This method clicks on Add to Cart button
+	 */
 	public void addProductToCart() throws InterruptedException {
 		try {
 			waitForElement(driver, addToCartButton);
@@ -40,7 +42,7 @@ public class PDP extends TestUtil {
 				scrollDown();
 			}
 			logMessageWithScreenShot("Scroll Complete...", "6_Add to cart");
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			addToCartButton.click();
 			logMessage("Clicked on Add to Cart Button...");
 		} catch (Exception e) {
@@ -49,6 +51,9 @@ public class PDP extends TestUtil {
 		}
 	}
 
+	/**
+	 * This method clicks on cart button
+	 */
 	public void navigateToCartScreen() {
 		try {
 			waitForElement(driver, cartButton);
@@ -62,6 +67,9 @@ public class PDP extends TestUtil {
 		}
 	}
 
+	/**
+	 * This method clicks on proceedToCheckout button
+	 */
 	public void proceedToCheckout() {
 		try {
 			logMessage("Waiting for Proceed to checkout button");
