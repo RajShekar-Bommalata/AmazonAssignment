@@ -2,7 +2,6 @@ package pages;
 
 import java.util.List;
 
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -26,7 +25,7 @@ public class PaymentScreen extends TestUtil {
 
 	@FindBy(xpath = "//android.widget.ListView/android.view.View")
 	private List<WebElement> bankOptions;
-	
+
 	public PaymentScreen(AndroidDriver<AndroidElement> driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -41,19 +40,25 @@ public class PaymentScreen extends TestUtil {
 			for (int scrollCount = 0; scrollCount < 6; scrollCount++) {
 				scrollDown();
 			}
-			
-			waitForElement(driver,radioButtonNetBanking);
+
+			waitForElement(driver, radioButtonNetBanking);
 			logMessage("Scroll Complete and net banking option is visible");
+			// Added pause to make the button click as waiting for the element and then
+			// clicking did not work
+			Thread.sleep(5000);
 			radioButtonNetBanking.click();
-			logMessageWithScreenShot("Clicked on net banking radio button","Net Banking radio");
-			
+			logMessageWithScreenShot("Clicked on net banking radio button", "Net Banking radio");
+
 		} catch (Exception e) {
 			Assert.fail("Failed to click NetBanking button");
-			logMessageWithScreenShot("Failed to click NetBanking button","Err_clickNetBankingRadioButton");
-			
+			logMessageWithScreenShot("Failed to click NetBanking button", "Err_clickNetBankingRadioButton");
+
 		}
 	}
-	
+
+	/**
+	 * This method Selects Bank Name
+	 */
 	public void selectBankName() {
 		try {
 			dropDownBankName.click();
@@ -66,16 +71,16 @@ public class PaymentScreen extends TestUtil {
 			}
 		} catch (Exception e) {
 			Assert.fail("Selecting Bank Name Failed");
-			logMessageWithScreenShot("Failed to select bank name","Err_selectBankName");
+			logMessageWithScreenShot("Failed to select bank name", "Err_selectBankName");
 		}
 	}
 
 	/**
-	 * Click Continue button
+	 * This method Clicks on Continue button
 	 */
 	public void clickContinueButton() {
 		try {
-			waitForElement(driver,buttonContinue);
+			waitForElement(driver, buttonContinue);
 			buttonContinue.click();
 			Reporter.log("Continue button is clicked");
 		} catch (Exception e) {
