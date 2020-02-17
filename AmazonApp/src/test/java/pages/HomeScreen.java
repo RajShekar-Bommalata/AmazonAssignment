@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -23,28 +24,32 @@ public class HomeScreen extends TestUtil {
 		PageFactory.initElements(driver, this);
 	}
 
-	// This method clicks on continue button on sign in page
-	// App uses already signed in account
+	/**
+	 * This method clicks on continue button on sign in page. 
+	 * App uses already signed in account
+	 */
 	public void clickOnContinueButton() {
 		try {
 			logMessage("Waiting for signin page to load");
-			waitForElement(driver,continue_button);
-			logMessageWithScreenShot("Signin page to loaded", "1_SigninPage");
+			waitForElement(driver, continue_button);
+			logMessageWithScreenShot("Signin page is loaded", "1_SigninPage");
 			// Click on continue button
 			continue_button.click();
 			logMessage("Clicked on Continue button");
 		} catch (Exception e) {
-			Assert.fail("Unable to click on continue button");
+			Assert.fail("Failed to click continue button");
 			logMessageWithScreenShot("Unable to click on continue button", "Err_clickOnContinueButton");
 		}
 	}
 
-	// This method selects English Radio button
+	/**
+	 * This method selects English Radio button
+	 */
 	public void selectLanguageButton() {
 		try {
 			// Wait for popup with language selection to appear on the screen
 			logMessage("Waiting for language selection popup to appear");
-			waitForElement(driver,english_radio);
+			waitForElement(driver, english_radio);
 			// Select English Language
 			english_radio.click();
 			logMessageWithScreenShot("Clicked on English radio button", "2_SelectLanguage");
@@ -54,7 +59,9 @@ public class HomeScreen extends TestUtil {
 		}
 	}
 
-	// This method clicks on save changes button
+	/**
+	 * This method clicks on save changes button
+	 */
 	public void clickOnSaveChangesButton() {
 		try {
 			// Click on save changes button
