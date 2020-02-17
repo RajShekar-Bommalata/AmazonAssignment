@@ -58,7 +58,7 @@ public class PDP extends TestUtil {
 		try {
 			waitForElement(driver, cartButton);
 			takeScreenshot("7_Cart");
-			logMessageWithScreenShot("Cart popup displayed", "7_Cart");
+			logMessageWithScreenShot("Cart popup displayed", "7_Cart Screen popup");
 			cartButton.click();
 			logMessage("Clicked on Cart Button...");
 		} catch (Exception e) {

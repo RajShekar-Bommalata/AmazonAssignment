@@ -36,7 +36,7 @@ public class PaymentScreen extends TestUtil {
 	 */
 	public void clickNetBankingRadioButton() {
 		try {
-			logMessageWithScreenShot("Scrolling to view net banking option", "Net Banking");
+			logMessageWithScreenShot("Scrolling to view net banking option", "11_Net Banking");
 			for (int scrollCount = 0; scrollCount < 6; scrollCount++) {
 				scrollDown();
 			}
@@ -62,7 +62,7 @@ public class PaymentScreen extends TestUtil {
 	public void selectBankName() {
 		try {
 			dropDownBankName.click();
-			logMessageWithScreenShot("Clicked on bank dropdown", "Bank List");
+			logMessageWithScreenShot("Clicked on bank dropdown", "12_Bank List");
 			for (WebElement bank : bankOptions) {
 				if (bank.getText().equalsIgnoreCase(datafile.getBankName())) {
 					bank.click();

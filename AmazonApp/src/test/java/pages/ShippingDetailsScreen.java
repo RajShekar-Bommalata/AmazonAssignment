@@ -50,7 +50,7 @@ public class ShippingDetailsScreen extends TestUtil {
 		try {
 			logMessage("Waiting for Deliver to this address button");
 			waitForElement(driver, deliverToThisAddressButton);
-			logMessageWithScreenShot("Deliver to this address button visible", "8_ShippingAddress");
+			logMessageWithScreenShot("Deliver to this address button visible", "9_ShippingAddress");
 			deliverToThisAddressButton.click();
 			logMessage("Clicked on deliver to this address button...");
 		} catch (Exception e) {
@@ -125,7 +125,7 @@ public class ShippingDetailsScreen extends TestUtil {
 		try {
 			logMessage("Waiting for continue button to be displayed");
 			waitForElement(driver, buttonContinue);
-			logMessageWithScreenShot("continue button is Visible", "ContinueButton");
+			logMessageWithScreenShot("continue button is Visible", "10_ContinueButton");
 			buttonContinue.click();
 			logMessage("Clicked on Continue Button");
 		} catch (Exception e) {

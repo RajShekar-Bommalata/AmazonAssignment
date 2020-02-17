@@ -31,7 +31,7 @@ public class CheckoutScreen extends TestUtil {
 		waitForElement(driver, actualItemName);
 		try {
 			productNameInCheckout = actualItemName.getText();
-			logMessageWithScreenShot("Product name captured in checkout..", "checkout");
+			logMessageWithScreenShot("Product name captured in checkout..", "13_checkout");
 		} catch (Exception e) {
 			Assert.fail("Failed to get item name from check out page");
 			logMessageWithScreenShot("Failed to get item name from check out page..", "Err_getItemNameOnCheckOut");
