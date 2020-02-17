@@ -2,7 +2,6 @@ package utility;
 
 import java.io.File;
 
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
@@ -20,6 +19,8 @@ import org.testng.annotations.BeforeSuite;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
 
 public class TestBase {
 	protected static String appPath;
@@ -58,20 +59,24 @@ public class TestBase {
 			log.error("Properties File Not Found");
 			e.printStackTrace();
 		}
+		/**
+		 * Define all required capabilities
+		 */
 
 		File app = new File(prop.getProperty("app.appPath"));
 		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setCapability("deviceName", prop.getProperty("app.deviceId"));
-		cap.setCapability("platformVersion", prop.getProperty("app.platformVersion"));
-		cap.setCapability("platformName", prop.getProperty("app.platformName"));
-		cap.setCapability("app", app.getAbsolutePath());
-		cap.setCapability("appPackage", prop.getProperty("app.appPackage"));
-		cap.setCapability("appActivity", prop.getProperty("app.appActivity"));
-		cap.setCapability("noReset", "false");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, prop.getProperty("app.deviceId"));
+		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, prop.getProperty("app.platformVersion"));
+		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, prop.getProperty("app.platformName"));
+		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+		cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, prop.getProperty("app.appPackage"));
+		cap.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, prop.getProperty("app.appActivity"));
+		cap.setCapability(MobileCapabilityType.NO_RESET, false);
 
 		try {
 			log.info("Setting Capabilities : " + cap);
-			driver = new AndroidDriver<AndroidElement>(new URL("http://" + prop.getProperty("app.appiumServerURI") + "/wd/hub"), cap);
+			driver = new AndroidDriver<AndroidElement>(
+					new URL("http://" + prop.getProperty("app.appiumServerURI") + "/wd/hub"), cap);
 			log.info("Driver instance created");
 		} catch (Exception e) {
 			log.error("Unable to create driver instance");
@@ -86,9 +91,12 @@ public class TestBase {
 
 		log.info("Driver Initialized");
 		Reporter.log("Driver Initialized.....");
-		
+
 	}
 
+	/**
+	 * This method checks for the visibility of the element
+	 */
 	public void waitForElement(AndroidDriver<AndroidElement> driver, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, Integer.parseInt(prop.getProperty("app.explicitWait")));
 		wait.until(ExpectedConditions.visibilityOf(element));
@@ -96,9 +104,9 @@ public class TestBase {
 
 	@AfterSuite
 	public void TeardownTest() {
-		//driver.closeApp();
+		driver.closeApp();
 		log.info("App Closed...");
-		//driver.quit();
+		driver.quit();
 		log.info("Session Ended...");
 	}
 }
