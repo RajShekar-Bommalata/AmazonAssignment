@@ -1,12 +1,12 @@
 package utility;
 
 import java.io.File;
-
 import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.Reporter;
 
@@ -35,12 +35,20 @@ public class TestUtil extends TestBase {
 	}
 
 	/**
+	 * This method rotates the screen
+	 */
+	public void rotate(ScreenOrientation orientation) {
+		driver.rotate(orientation);
+	}
+
+	/**
 	 * This method only logs message in report and custom logs
 	 */
 	public static void logMessage(String msg) {
 		Reporter.log(msg);
 		log.info(msg);
 	}
+
 	/**
 	 * This method only logs error message in report and custom logs
 	 */
@@ -69,7 +77,7 @@ public class TestUtil extends TestBase {
 		System.out.println(msg);
 		takeScreenshot(SSname);
 	}
-	
+
 	/**
 	 * Screenshot code
 	 */
