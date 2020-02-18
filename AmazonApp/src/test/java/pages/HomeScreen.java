@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.FindBy;
@@ -30,12 +31,14 @@ public class HomeScreen extends TestUtil {
 	 */
 	public void clickOnContinueButton() {
 		try {
+			rotate(ScreenOrientation.LANDSCAPE);
 			logMessage("Waiting for signin page to load");
 			waitForElement(driver, continue_button);
 			logMessageWithScreenShot("Signin page is loaded", "1_SigninPage");
 			// Click on continue button
 			continue_button.click();
 			logMessage("Clicked on Continue button");
+			rotate(ScreenOrientation.PORTRAIT);
 		} catch (Exception e) {
 			logErrorMessageWithScreenShot(e.toString(), "Err_clickOnContinueButton");
 			Assert.fail("Failed to Click on Continue button");
