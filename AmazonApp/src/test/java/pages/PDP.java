@@ -38,7 +38,7 @@ public class PDP extends TestUtil {
 		try {
 			waitForElement(driver, addToCartButton);
 			logMessage("Scrolling down  Add to Cart Button...");
-			for (int scrollCount = 0; scrollCount < 4; scrollCount++) {
+			for (int scrollCount = 0; scrollCount < 6; scrollCount++) {
 				scrollDown();
 			}
 			logMessageWithScreenShot("Scroll Complete...", "6_Add to cart");

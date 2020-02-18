@@ -37,7 +37,7 @@ public class PLP extends TestUtil {
 				logMessage(list.getText());
 			}
 			logMessageWithScreenShot("Search results displayed", "5_ProductList");
-			productNameInSearchPage = productList.get(2).getText();
+			productNameInSearchPage = productList.get(1).getText();
 			logMessage("Retrieved product name at second location");
 		} catch (Exception e) {
 			logErrorMessageWithScreenShot(e.toString(), "Err_getItemName");
@@ -51,9 +51,9 @@ public class PLP extends TestUtil {
 	 */
 	public void selectAProduct() {
 		try {
-			waitForElement(driver, productList.get(2));
-			logMessage(productList.get(2).getText() + "  Product is selected on search results page");
-			productList.get(2).click();
+			waitForElement(driver, productList.get(1));
+			logMessage(productList.get(1).getText() + "  Product is selected on search results page");
+			productList.get(1).click();
 		} catch (Exception e) {
 			logErrorMessageWithScreenShot(e.toString(), "Err_selectAProduct");
 			Assert.fail("Failed to select product");

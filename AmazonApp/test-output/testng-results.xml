@@ -71,7 +71,7 @@
       <![CDATA[Retrieved product name at second location]]>
     </line>
     <line>
-      <![CDATA[TCL 163.96 cm (65 inches)  AI 4K UHD Certified Android Smart LED TV 65P8 (Black) (2019 Model)  Product is selected on search results page]]>
+      <![CDATA[OnePlus 138.8 cm (55 inches) Q1 Series 4K Certified Android QLED TV 55Q1IN-1 (Black) (Without Stand)  Product is selected on search results page]]>
     </line>
     <line>
       <![CDATA[Scrolling down  Add to Cart Button...]]>
@@ -170,12 +170,12 @@
       <![CDATA[Session Ended...]]>
     </line>
   </reporter-output>
-  <suite name="Amazon App" duration-ms="105795" started-at="2020-02-17T10:28:23Z" finished-at="2020-02-17T10:30:09Z">
+  <suite name="Amazon App" duration-ms="125160" started-at="2020-02-18T09:53:01Z" finished-at="2020-02-18T09:55:06Z">
     <groups>
     </groups>
-    <test name="Amazon Android App" duration-ms="105795" started-at="2020-02-17T10:28:23Z" finished-at="2020-02-17T10:30:09Z">
+    <test name="Amazon Android App" duration-ms="125160" started-at="2020-02-18T09:53:01Z" finished-at="2020-02-18T09:55:06Z">
       <class name="tests.PaymentDetails">
-        <test-method status="PASS" signature="selectPaymentDetails()[pri:0, instance:tests.PaymentDetails@ea1a8d5]" name="selectPaymentDetails" duration-ms="25988" started-at="2020-02-17T10:29:35Z" finished-at="2020-02-17T10:30:01Z">
+        <test-method status="PASS" signature="selectPaymentDetails()[pri:0, instance:tests.PaymentDetails@ea1a8d5]" name="selectPaymentDetails" duration-ms="27559" started-at="2020-02-18T09:54:17Z" finished-at="2020-02-18T09:54:44Z">
           <reporter-output>
             <line>
               <![CDATA[Scrolling to view net banking option]]>
@@ -205,7 +205,7 @@
         </test-method> <!-- selectPaymentDetails -->
       </class> <!-- tests.PaymentDetails -->
       <class name="tests.AddToCart">
-        <test-method status="PASS" signature="AddItemToCart()[pri:0, instance:tests.AddToCart@5faeada1]" name="AddItemToCart" duration-ms="31973" started-at="2020-02-17T10:28:54Z" finished-at="2020-02-17T10:29:26Z">
+        <test-method status="PASS" signature="AddItemToCart()[pri:0, instance:tests.AddToCart@5faeada1]" name="AddItemToCart" duration-ms="33616" started-at="2020-02-18T09:53:32Z" finished-at="2020-02-18T09:54:06Z">
           <reporter-output>
             <line>
               <![CDATA[Scrolling down  Add to Cart Button...]]>
@@ -247,7 +247,7 @@
         </test-method> <!-- AddItemToCart -->
       </class> <!-- tests.AddToCart -->
       <class name="tests.ShippingDetails">
-        <test-method status="PASS" signature="selectOrEnterShippingDetails()[pri:0, instance:tests.ShippingDetails@528931cf]" name="selectOrEnterShippingDetails" duration-ms="8884" started-at="2020-02-17T10:29:26Z" finished-at="2020-02-17T10:29:35Z">
+        <test-method status="PASS" signature="selectOrEnterShippingDetails()[pri:0, instance:tests.ShippingDetails@528931cf]" name="selectOrEnterShippingDetails" duration-ms="10670" started-at="2020-02-18T09:54:06Z" finished-at="2020-02-18T09:54:17Z">
           <reporter-output>
             <line>
               <![CDATA[Waiting for Deliver to this address button]]>
@@ -277,7 +277,7 @@
         </test-method> <!-- selectOrEnterShippingDetails -->
       </class> <!-- tests.ShippingDetails -->
       <class name="tests.SearchProduct">
-        <test-method status="PASS" signature="searchForAProduct()[pri:0, instance:tests.SearchProduct@34cd072c]" name="searchForAProduct" duration-ms="10409" started-at="2020-02-17T10:28:37Z" finished-at="2020-02-17T10:28:48Z">
+        <test-method status="PASS" signature="searchForAProduct()[pri:0, instance:tests.SearchProduct@34cd072c]" name="searchForAProduct" duration-ms="11227" started-at="2020-02-18T09:53:15Z" finished-at="2020-02-18T09:53:26Z">
           <reporter-output>
             <line>
               <![CDATA[Clicked on search input]]>
@@ -292,11 +292,11 @@
         </test-method> <!-- searchForAProduct -->
       </class> <!-- tests.SearchProduct -->
       <class name="tests.Home">
-        <test-method status="PASS" signature="ReadProperties()[pri:0, instance:tests.Home@11438d26]" name="ReadProperties" is-config="true" duration-ms="15" started-at="2020-02-17T10:28:13Z" finished-at="2020-02-17T10:28:13Z">
+        <test-method status="PASS" signature="ReadProperties()[pri:0, instance:tests.Home@11438d26]" name="ReadProperties" is-config="true" duration-ms="29" started-at="2020-02-18T09:52:46Z" finished-at="2020-02-18T09:52:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReadProperties -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Home@11438d26]" name="setup" is-config="true" duration-ms="10433" started-at="2020-02-17T10:28:13Z" finished-at="2020-02-17T10:28:23Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Home@11438d26]" name="setup" is-config="true" duration-ms="14867" started-at="2020-02-18T09:52:46Z" finished-at="2020-02-18T09:53:01Z">
           <reporter-output>
             <line>
               <![CDATA[Properties loaded successfully.]]>
@@ -312,7 +312,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginAndSelectLanguage()[pri:0, instance:tests.Home@11438d26]" name="loginAndSelectLanguage" duration-ms="14133" started-at="2020-02-17T10:28:23Z" finished-at="2020-02-17T10:28:37Z">
+        <test-method status="PASS" signature="loginAndSelectLanguage()[pri:0, instance:tests.Home@11438d26]" name="loginAndSelectLanguage" duration-ms="13666" started-at="2020-02-18T09:53:01Z" finished-at="2020-02-18T09:53:15Z">
           <reporter-output>
             <line>
               <![CDATA[Waiting for signin page to load]]>
@@ -343,7 +343,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginAndSelectLanguage -->
-        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:tests.Home@11438d26]" name="TeardownTest" is-config="true" duration-ms="1313" started-at="2020-02-17T10:30:09Z" finished-at="2020-02-17T10:30:10Z">
+        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:tests.Home@11438d26]" name="TeardownTest" is-config="true" duration-ms="1411" started-at="2020-02-18T09:55:06Z" finished-at="2020-02-18T09:55:08Z">
           <reporter-output>
             <line>
               <![CDATA[App Closed...]]>
@@ -355,7 +355,7 @@
         </test-method> <!-- TeardownTest -->
       </class> <!-- tests.Home -->
       <class name="tests.SelectProduct">
-        <test-method status="PASS" signature="selectAProduct()[pri:0, instance:tests.SelectProduct@7a1ebcd8]" name="selectAProduct" duration-ms="6323" started-at="2020-02-17T10:28:48Z" finished-at="2020-02-17T10:28:54Z">
+        <test-method status="PASS" signature="selectAProduct()[pri:0, instance:tests.SelectProduct@7a1ebcd8]" name="selectAProduct" duration-ms="6424" started-at="2020-02-18T09:53:26Z" finished-at="2020-02-18T09:53:32Z">
           <reporter-output>
             <line>
               <![CDATA[List of Available products]]>
@@ -379,13 +379,13 @@
               <![CDATA[Retrieved product name at second location]]>
             </line>
             <line>
-              <![CDATA[TCL 163.96 cm (65 inches)  AI 4K UHD Certified Android Smart LED TV 65P8 (Black) (2019 Model)  Product is selected on search results page]]>
+              <![CDATA[OnePlus 138.8 cm (55 inches) Q1 Series 4K Certified Android QLED TV 55Q1IN-1 (Black) (Without Stand)  Product is selected on search results page]]>
             </line>
           </reporter-output>
         </test-method> <!-- selectAProduct -->
       </class> <!-- tests.SelectProduct -->
       <class name="tests.Checkout">
-        <test-method status="PASS" signature="itemCheckout()[pri:0, instance:tests.Checkout@1563da5]" name="itemCheckout" duration-ms="8014" started-at="2020-02-17T10:30:01Z" finished-at="2020-02-17T10:30:09Z">
+        <test-method status="PASS" signature="itemCheckout()[pri:0, instance:tests.Checkout@1563da5]" name="itemCheckout" duration-ms="21917" started-at="2020-02-18T09:54:44Z" finished-at="2020-02-18T09:55:06Z">
           <reporter-output>
             <line>
               <![CDATA[Product name captured in checkout..]]>

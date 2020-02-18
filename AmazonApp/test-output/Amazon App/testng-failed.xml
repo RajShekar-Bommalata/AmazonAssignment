@@ -3,6 +3,54 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon App]">
   <test thread-count="5" name="Amazon Android App(failed)">
     <classes>
+      <class name="tests.AddToCart">
+        <methods>
+          <include name="ReadProperties"/>
+          <include name="setup"/>
+          <include name="TeardownTest"/>
+          <include name="AddItemToCart"/>
+        </methods>
+      </class> <!-- tests.AddToCart -->
+      <class name="tests.PaymentDetails">
+        <methods>
+          <include name="ReadProperties"/>
+          <include name="setup"/>
+          <include name="TeardownTest"/>
+          <include name="selectPaymentDetails"/>
+        </methods>
+      </class> <!-- tests.PaymentDetails -->
+      <class name="tests.ShippingDetails">
+        <methods>
+          <include name="ReadProperties"/>
+          <include name="setup"/>
+          <include name="selectOrEnterShippingDetails"/>
+          <include name="TeardownTest"/>
+        </methods>
+      </class> <!-- tests.ShippingDetails -->
+      <class name="tests.SelectProduct">
+        <methods>
+          <include name="ReadProperties"/>
+          <include name="setup"/>
+          <include name="selectAProduct"/>
+          <include name="TeardownTest"/>
+        </methods>
+      </class> <!-- tests.SelectProduct -->
+      <class name="tests.SearchProduct">
+        <methods>
+          <include name="ReadProperties"/>
+          <include name="setup"/>
+          <include name="searchForAProduct"/>
+          <include name="TeardownTest"/>
+        </methods>
+      </class> <!-- tests.SearchProduct -->
+      <class name="tests.Checkout">
+        <methods>
+          <include name="ReadProperties"/>
+          <include name="setup"/>
+          <include name="itemCheckout"/>
+          <include name="TeardownTest"/>
+        </methods>
+      </class> <!-- tests.Checkout -->
       <class name="tests.Home">
         <methods>
           <include name="ReadProperties"/>

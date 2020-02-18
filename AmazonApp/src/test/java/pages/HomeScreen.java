@@ -34,13 +34,13 @@ public class HomeScreen extends TestUtil {
 			//Rotate landscape mode
 			rotate(ScreenOrientation.LANDSCAPE);
 			logMessage("Waiting for signin page to load");
+			//Rotate portrait mode
+			rotate(ScreenOrientation.PORTRAIT);
 			waitForElement(driver, continue_button);
 			logMessageWithScreenShot("Signin page is loaded", "1_SigninPage");
 			// Click on continue button
 			continue_button.click();
 			logMessage("Clicked on Continue button");
-			//Rotate portrait mode
-			rotate(ScreenOrientation.PORTRAIT);
 		} catch (Exception e) {
 			logErrorMessageWithScreenShot(e.toString(), "Err_clickOnContinueButton");
 			Assert.fail("Failed to Click on Continue button");
